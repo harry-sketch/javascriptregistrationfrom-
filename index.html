@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Registration Form</h2>
+        </div>
+        <form class= "form" action="" name="myform" onsubmit="return validateForm()" method="post">
+            <div class="form-control" id="name">
+                <label for="">Username:</label>
+                <input type="text" name="fname"  placeholder="enter full name" required autocomplete="off"> <span class="formerror"></span>
+            </div>
+            <div class="form-control" id="email">
+                <label for="">Email:</label>
+                <input type="email" name="femail"  placeholder="enter email" required autocomplete="off"> <span class="formerror"></span>
+            </div>
+            <div class="form-control" id="contact">
+                <label for="">Contact:</label>
+                <input type="number" name="fnum"  placeholder="enter full name" required autocomplete="off"> <span class="formerror"></span>
+            </div>
+            <div class="form-control" id="pass">
+                <label for="">Password:</label>
+                <input type="password" name="fpass" placeholder="enter password" autocomplete="off" required> <span class="formerror"></span>
+            </div>
+            <div class="form-control" id="cpass">
+                <label for="">Confirm Password:</label>
+                <input type="password" name="fcpass" placeholder="confirm password" required autocomplete="off"> <span class="formerror"></span>
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
